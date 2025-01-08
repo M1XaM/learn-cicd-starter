@@ -20,7 +20,6 @@ func unused() {
 	// hihi
 }
 
-
 type apiConfig struct {
 	DB *database.Queries
 }
