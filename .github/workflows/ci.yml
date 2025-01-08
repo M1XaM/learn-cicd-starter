@@ -20,6 +20,12 @@ jobs:
 
       - name: Unit tests on authorization
         run: go test -cover ./...
+    
+      - name: Install gosec
+        run: go install github.com/securego/gosec/v2/cmd/gosec@latest
+
+      - name: Checking security
+        run: gosec ./...
 
   style:
     name: Style
