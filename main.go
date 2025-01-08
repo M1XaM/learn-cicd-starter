@@ -13,9 +13,13 @@ import (
 	"github.com/joho/godotenv"
 
 	"github.com/bootdotdev/learn-cicd-starter/internal/database"
-
 	_ "github.com/tursodatabase/libsql-client-go/libsql"
 )
+
+func unused() {
+	// hihi
+}
+
 
 type apiConfig struct {
 	DB *database.Queries
